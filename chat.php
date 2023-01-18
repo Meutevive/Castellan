@@ -12,8 +12,8 @@ $id = mysqli_connect("172.20.111.124","abass", "abass", "autoecole");
  
     if(isset($_POST["send"]))
     {
-       $message = $_POST["message"];
-       $_SESSION["log"];
+        $message = $_POST["message"];
+        $_SESSION["log"];
 
         $requete = "insert into chat (idC, message, date, expediteur)
                     values (null,'$message',now(),'$_SESSION[log]')";
